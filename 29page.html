@@ -1,0 +1,26 @@
+<script>
+function println(value)
+{
+    if (value != undefined) document.write(value);
+    document.write("<br>");
+}
+</script>
+<script>
+var fruits = ["Orange", "Apple", "Mango"];
+println(fruits);
+println(fruits.join());
+println(fruits.join("+"));
+println(fruits.join("and"));
+fruits.sort();
+println(fruits);
+
+println();
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort();
+println(points);
+points.sort(function(a,b) {return a-b;});
+println(points);
+points.sort(function(a,b) {return b-a;});
+println(points);
+</script>

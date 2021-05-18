@@ -1,0 +1,18 @@
+<script>
+function println(value)
+{
+    if (value != undefined) document.write(value);
+    document.write("<br>");
+}
+</script>
+<script>
+var myCars = new Array();
+myCars[0] = "Hyundai";
+myCars[1] = "Nissan";
+myCars[2] = "BMW";
+println(myCars);
+var myCars = new Array("Hyundai", "Nissan", "BMW");
+println(myCars);
+var myCars = ["Hyundai", "Nissan", "BMW"];
+println(myCars);
+</script>
