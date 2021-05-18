@@ -1,10 +1,14 @@
-<script type="text/javascript">
-var counter = 100;
-var numbers = "";
-while (counter >= 0)
+<script>
+function println(value)
 {
-	numbers += "Number " + counter + "<br>";
-	counter -= 10;
+    if (value != undefined) document.write(value);
+    document.write("<br>");
 }
-document.write(numbers);
+</script>
+<script>
+var a=23, b=true, c="abc";
+println(typeof(a)+", "+typeof(b)+", "+typeof(c));
+
+var x = new Number(23); y=new Boolean(true); z=new String("abc");
+println(typeof(x)+", "+typeof(y)+", "+typeof(z));
 </script>

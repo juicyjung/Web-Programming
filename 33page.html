@@ -1,0 +1,13 @@
+<script>
+function println(value)
+{
+    if (value != undefined) document.write(value);
+    document.write("<br>");
+}
+</script>
+<script>
+var str2 = new String("abc");
+var str3 = str2.valueOf();
+println(str3 +", "+typeof(str3));
+println(str3.length+", "+str3.substr(1,1));
+</script>
