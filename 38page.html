@@ -1,0 +1,19 @@
+<script>
+function println(value)
+{
+    if (value != undefined) document.write(value);
+    document.write("<br>");
+}
+</script>
+<script>
+var then = new Date();
+then.setFullYear(2020, 5, 5);
+var now = new Date();
+
+println("Now is "+now);
+
+if(now < then)
+	println("Now is <em>before</em> " + then);
+else
+	println("Now is <em>after</em> " + then);
+</script>

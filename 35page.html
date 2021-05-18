@@ -1,8 +1,15 @@
-<script type="text/javascript">
-for (var i=0, x=""; i<10; i++)
+<script>
+function println(value)
 {
-	if (i==3) break;
-	x = x+"The number is: " + i + "<br/>";
+    if (value != undefined) document.write(value);
+    document.write("<br>");
 }
-document.write(x);
+</script>
+<script>
+var now = new Date(), then = new Date();
+println(now);
+then.setDate(now.getDate()+2);
+then.setHours(now.getHours()+13);
+then.setMinutes(now.getMinutes()+24);
+println(then);
 </script>
