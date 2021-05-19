@@ -1,0 +1,13 @@
+<script>
+var myWindow = null;
+function win_open(){
+	if(myWindow == null)
+		myWindow = window.open("http://www.naver.com/");
+	}
+function win_close(){
+	if(myWindow != null)
+		myWindow = null;
+	}
+</script>
+<input type="button" value="Open new window" onclick="win_open()"/>
+<input type="button" value="Close" onclick="win_close()"/>
