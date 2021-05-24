@@ -1,0 +1,15 @@
+<script>
+function println(value)
+{
+    if (value != undefined) document.write(value);
+    document.write("<br>");
+}
+</script>
+<script>
+println("Current url is: " + location.href + "<br/>");
+function jump() {
+	location.assign("http://www.naver.com/");
+	location.href="http://www.naver.com/";
+}
+</script>
+<input type = "button" value="Jump to Naver" onclick="jump()"/>
