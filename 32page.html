@@ -1,14 +1,8 @@
+<p onclick="this.innerHTML='You clicked this paragraph!'">
+Click this paragraph.</p>
+<p onclick="changeText(this)">This is another paragraph to click.</p>
 <script>
-function println(value)
-{
-    if (value != undefined) document.write(value);
-    document.write("<br>");
+function changeText(element) {
+	element.innerHTML="This paragraph is also clicked!";
 }
-</script>
-<script>
-var a=23, b=true, c="abc";
-println(typeof(a)+", "+typeof(b)+", "+typeof(c));
-
-var x = new Number(23); y=new Boolean(true); z=new String("abc");
-println(typeof(x)+", "+typeof(y)+", "+typeof(z));
 </script>
