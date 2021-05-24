@@ -1,19 +1,10 @@
-<script type="text/javascript">
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
 
-var chr = prompt("Input an Alphabet: ", "");
-switch(chr)
-{
-	case 'a':
-		alert("Vowel a"); break;
-	case 'e':
-		alert("Vowel e"); break;
-	case 'i':
-		alert("Vowel i"); break;
-	case 'o':
-		alert("Vowel o"); break;
-	case 'u':
-		alert("Vowel u"); break;
-	default:
-		alert("Not a vowel");
-}
+<script>
+var x1 = document.getElementById("p1");
+var x2 = document.getElementById("p2");
+x1.style.color="red"; x1.style.textDecoration="underline";
+x2.style.fontFamily = "Helvetica"; x2.style.fontSize="xx-large";
 </script>
+<p> The style of paragraghs above was chaged by JavaScript.</p>

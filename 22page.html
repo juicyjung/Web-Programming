@@ -1,5 +1,11 @@
+<p id="p1">Hello World!</p>
+<img id="image" src="apple.gif" width="160" height="160">
+
 <script>
-var myBoolean = new Boolean(true);
-println(myBoolean.toString());
-println(myBoolean.valueOf());
+var x = document.getElementById("p1");
+x.innerHTML = "Nice to See You!";
+var x = document.getElementById("image");
+x.src="world.jpg"; x.width=300;
 </script>
+<p> The paragraph above was chaged by JavaScript.<br/>
+The image was apple.gif, but was changed to world.jpg</p>
