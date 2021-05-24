@@ -1,13 +1,16 @@
+<p>Current date is: <span id="sp1"></span></p>
+<input type="button" id="b1" value="Get date"/>
+<input type="button" id="b2" value="Set title"/>
+
 <script>
-function println(value)
-{
-    if (value != undefined) document.write(value);
-    document.write("<br>");
+var x = document.getElementById("b1");
+x.onclick = function getDate() {
+	document.getElementById("sp1").innerHTML = Date();
 }
-</script>
-<script>
-var str2 = new String("abc");
-var str3 = str2.valueOf();
-println(str3 +", "+typeof(str3));
-println(str3.length+", "+str3.substr(1,1));
+
+var y = document.getElementById("b2");
+y.onclick = function setTitle() {
+	var t = document.getElementsByTagName("p");
+	t[0].innerHTML = Date();
+}
 </script>
