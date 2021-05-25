@@ -1,15 +1,14 @@
+<head>
+<style>
+div {background-color:#D94A38; color:white; width:150px; height:20px; padding:40px;}
+</style>
+
 <script>
-function println(value)
-{
-    if (value != undefined) document.write(value);
-    document.write("<br>");
-}
+function mouseOver(elem) {elem.innerHTML="Thank you!";}
+function mouseOut(elem) {elem.innerHTML="Move mouse here ";}
 </script>
-<script>
-var now = new Date(), then = new Date();
-println(now);
-then.setDate(now.getDate()+2);
-then.setHours(now.getHours()+13);
-then.setMinutes(now.getMinutes()+24);
-println(then);
-</script>
+</head>
+
+<body>
+<div onmouseover ="mouseOver(this)" onmouseout ="mouseOut(this)">Move mouse here</div>
+</body>
