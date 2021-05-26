@@ -1,8 +1,12 @@
+<body onload="setDate()">
 <script>
-document.write(isNaN(123)+ "<br/>");
-document.write(isNaN(5-2)+ "<br/>");
-document.write(isNaN("123")+ "<br/>");
-document.write(isNaN("5-2")+ "<br/>");
-document.write(isNaN("Hello")+ "<br/>");
-document.write(isNaN("2005/12/12")+ "<br/>");
+var myDate;
+function setDate() {
+var now = new Date();
+document.getElementById("sp1").innerHTML = now;
+}
 </script>
+<p>Current time: <span id="sp1"></span></p>
+<button onclick="myDate = setInterval(setDate(), 500)">Start</button>
+<button onclick="clearInterval(myDate)">Stop</button>
+</body>

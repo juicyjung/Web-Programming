@@ -1,9 +1,16 @@
-<script type="text/javascript">
-var string1="Hello ";
-var string2="world";
-var result= addStrings(string1,string2);
-document.write(result);
-function addStrings(str1,str2) {
-return str1.concat(str2);
+<script>
+function println(value)
+{
+    if (value != undefined) document.write(value);
+    document.write("<br>");
 }
+</script>
+
+<a name="google" href="http://www.google.com">Google</a>
+<a href="http://www.naver.com">Naver</a>
+<script>
+println("Number of anchors: " + document.anchors.length);
+println("Number of links: " + document.links.length);
+println("First anchor is: " + document.anchors[0].innerHTML);
+println("Second link's html is: " + document.links[1]);
 </script>
