@@ -1,10 +1,19 @@
+<h1>Form Validation</h1>
+<p>Enter the following information. When you press Submit button,
+the input data will be validated and then, if correct, sent to the server.</p>
+<form name="form1" action="submit.php" onsubmit="return validate(this)" >
+<p><b>Your name: </b><input type="text" name="yourname"></p>
+<p><b>Email: </b><input type="text" name="address"></p>
+<p><b>Phone: </b><input type="text" name="phone"></p>
+<p><input type="submit" value="Submit"></p>
+</form>
+
 <script>
-function go_back() {
-	window.history.back();
+function validate(form) {
+if (form.yourname.value.length < 10) {
+	alert("Please enter your full name.");
+	return false;
 }
-function go_forward() {
-	window.history.forward();
+return true;
 }
 </script>
-<input type = "button" value="Back" onclick="go_back()"/>
-<input type = "button" value="Forward" onclick="go_forward()"/>

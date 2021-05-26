@@ -1,15 +1,11 @@
+<form name="form1">
+<h1>Create account</h1>
+<p>Your name<br>
+<input type="text" name="username">
+<p>Email<br>
+<input type="text" name="email">
+</form>
 <script>
-function println(value)
-{
-    if (value != undefined) document.write(value);
-    document.write("<br>");
-}
+var x = document.form1.username.value;
+var y = document.form1.email.value;
 </script>
-<script>
-println("Current url is: " + location.href + "<br/>");
-function jump() {
-	location.assign("http://www.naver.com/");
-	location.href="http://www.naver.com/";
-}
-</script>
-<input type = "button" value="Jump to Naver" onclick="jump()"/>
